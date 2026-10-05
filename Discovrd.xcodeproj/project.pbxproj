@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* Discovrd/Sources/App/DiscovrdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000001 /* Discovrd/Sources/App/DiscovrdApp.swift */; };
+		A10000000000000000000002 /* Discovrd/Sources/Models/TrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000002 /* Discovrd/Sources/Models/TrackItem.swift */; };
+		A10000000000000000000003 /* Discovrd/Sources/Models/SwipeRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000003 /* Discovrd/Sources/Models/SwipeRecord.swift */; };
+		A10000000000000000000004 /* Discovrd/Sources/Models/CachedTasteProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000004 /* Discovrd/Sources/Models/CachedTasteProfile.swift */; };
+		A10000000000000000000005 /* Discovrd/Sources/Models/TasteProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000005 /* Discovrd/Sources/Models/TasteProfile.swift */; };
+		A10000000000000000000006 /* Discovrd/Sources/Models/DeckAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000006 /* Discovrd/Sources/Models/DeckAlgorithm.swift */; };
+		A10000000000000000000007 /* Discovrd/Sources/Models/AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000007 /* Discovrd/Sources/Models/AppSettings.swift */; };
+		A10000000000000000000008 /* Discovrd/Sources/Services/ServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000008 /* Discovrd/Sources/Services/ServiceProtocols.swift */; };
+		A10000000000000000000009 /* Discovrd/Sources/Services/SwiftDataSwipeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000009 /* Discovrd/Sources/Services/SwiftDataSwipeStore.swift */; };
+		A1000000000000000000000A /* Discovrd/Sources/Services/TasteProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000A /* Discovrd/Sources/Services/TasteProfileService.swift */; };
+		A1000000000000000000000B /* Discovrd/Sources/Services/MusicAPINetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000B /* Discovrd/Sources/Services/MusicAPINetworkClient.swift */; };
+		A1000000000000000000000C /* Discovrd/Sources/Services/AppleMusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000C /* Discovrd/Sources/Services/AppleMusicService.swift */; };
+		A1000000000000000000000D /* Discovrd/Sources/Services/MockMusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000D /* Discovrd/Sources/Services/MockMusicService.swift */; };
+		A1000000000000000000000E /* Discovrd/Sources/Services/MockSwipeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000E /* Discovrd/Sources/Services/MockSwipeStore.swift */; };
+		A1000000000000000000000F /* Discovrd/Sources/Services/AudioPreviewPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000F /* Discovrd/Sources/Services/AudioPreviewPlayer.swift */; };
+		A10000000000000000000010 /* Discovrd/Sources/Views/Components/AmbientArtworkBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000010 /* Discovrd/Sources/Views/Components/AmbientArtworkBackground.swift */; };
+		A10000000000000000000011 /* Discovrd/Sources/Views/Components/TrackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000011 /* Discovrd/Sources/Views/Components/TrackCardView.swift */; };
+		A10000000000000000000012 /* Discovrd/Sources/Views/Components/ActionButtonsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000012 /* Discovrd/Sources/Views/Components/ActionButtonsBar.swift */; };
+		A10000000000000000000013 /* Discovrd/Sources/Views/Components/SwipeStampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000013 /* Discovrd/Sources/Views/Components/SwipeStampView.swift */; };
+		A10000000000000000000014 /* Discovrd/Sources/Views/Components/SwipeDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000014 /* Discovrd/Sources/Views/Components/SwipeDeckView.swift */; };
+		A10000000000000000000015 /* Discovrd/Sources/Views/Components/EmptyDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000015 /* Discovrd/Sources/Views/Components/EmptyDeckView.swift */; };
+		A10000000000000000000016 /* Discovrd/Sources/Views/Components/ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000016 /* Discovrd/Sources/Views/Components/ErrorView.swift */; };
+		A10000000000000000000017 /* Discovrd/Sources/Views/Discover/DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000017 /* Discovrd/Sources/Views/Discover/DiscoverViewModel.swift */; };
+		A10000000000000000000018 /* Discovrd/Sources/Views/Discover/DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000018 /* Discovrd/Sources/Views/Discover/DiscoverView.swift */; };
+		A10000000000000000000019 /* Discovrd/Sources/Views/MyArtists/MyArtistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000019 /* Discovrd/Sources/Views/MyArtists/MyArtistsViewModel.swift */; };
+		A1000000000000000000001A /* Discovrd/Sources/Views/MyArtists/MyArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001A /* Discovrd/Sources/Views/MyArtists/MyArtistsView.swift */; };
+		A1000000000000000000001B /* Discovrd/Sources/Views/Settings/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001B /* Discovrd/Sources/Views/Settings/SettingsView.swift */; };
+		A1000000000000000000001C /* Discovrd/Sources/Views/Onboarding/OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001C /* Discovrd/Sources/Views/Onboarding/OnboardingView.swift */; };
+		A1000000000000000000001D /* Discovrd/Sources/Views/Onboarding/AuthorizationPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001D /* Discovrd/Sources/Views/Onboarding/AuthorizationPromptView.swift */; };
+		A1000000000000000000001E /* Discovrd/Sources/Views/MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001E /* Discovrd/Sources/Views/MainTabView.swift */; };
+		A1000000000000000000001F /* Discovrd/Sources/Views/DiscovrdPreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001F /* Discovrd/Sources/Views/DiscovrdPreviews.swift */; };
+		B100000000000000000001 /* Discovrd/Resources/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = R100000000000000000001 /* Discovrd/Resources/Assets.xcassets */; };
+		B100000000000000000002 /* Discovrd/Resources/PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = R100000000000000000002 /* Discovrd/Resources/PrivacyInfo.xcprivacy */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000008 /* Discovrd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discovrd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10000000000000000000001 /* Discovrd/Sources/App/DiscovrdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/App/DiscovrdApp.swift; sourceTree = "<group>"; };
+		F10000000000000000000002 /* Discovrd/Sources/Models/TrackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Models/TrackItem.swift; sourceTree = "<group>"; };
+		F10000000000000000000003 /* Discovrd/Sources/Models/SwipeRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Models/SwipeRecord.swift; sourceTree = "<group>"; };
+		F10000000000000000000004 /* Discovrd/Sources/Models/CachedTasteProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Models/CachedTasteProfile.swift; sourceTree = "<group>"; };
+		F10000000000000000000005 /* Discovrd/Sources/Models/TasteProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Models/TasteProfile.swift; sourceTree = "<group>"; };
+		F10000000000000000000006 /* Discovrd/Sources/Models/DeckAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Models/DeckAlgorithm.swift; sourceTree = "<group>"; };
+		F10000000000000000000007 /* Discovrd/Sources/Models/AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Models/AppSettings.swift; sourceTree = "<group>"; };
+		F10000000000000000000008 /* Discovrd/Sources/Services/ServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Services/ServiceProtocols.swift; sourceTree = "<group>"; };
+		F10000000000000000000009 /* Discovrd/Sources/Services/SwiftDataSwipeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Services/SwiftDataSwipeStore.swift; sourceTree = "<group>"; };
+		F1000000000000000000000A /* Discovrd/Sources/Services/TasteProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Services/TasteProfileService.swift; sourceTree = "<group>"; };
+		F1000000000000000000000B /* Discovrd/Sources/Services/MusicAPINetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Services/MusicAPINetworkClient.swift; sourceTree = "<group>"; };
+		F1000000000000000000000C /* Discovrd/Sources/Services/AppleMusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Services/AppleMusicService.swift; sourceTree = "<group>"; };
+		F1000000000000000000000D /* Discovrd/Sources/Services/MockMusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Services/MockMusicService.swift; sourceTree = "<group>"; };
+		F1000000000000000000000E /* Discovrd/Sources/Services/MockSwipeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Services/MockSwipeStore.swift; sourceTree = "<group>"; };
+		F1000000000000000000000F /* Discovrd/Sources/Services/AudioPreviewPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Services/AudioPreviewPlayer.swift; sourceTree = "<group>"; };
+		F10000000000000000000010 /* Discovrd/Sources/Views/Components/AmbientArtworkBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Components/AmbientArtworkBackground.swift; sourceTree = "<group>"; };
+		F10000000000000000000011 /* Discovrd/Sources/Views/Components/TrackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Components/TrackCardView.swift; sourceTree = "<group>"; };
+		F10000000000000000000012 /* Discovrd/Sources/Views/Components/ActionButtonsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Components/ActionButtonsBar.swift; sourceTree = "<group>"; };
+		F10000000000000000000013 /* Discovrd/Sources/Views/Components/SwipeStampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Components/SwipeStampView.swift; sourceTree = "<group>"; };
+		F10000000000000000000014 /* Discovrd/Sources/Views/Components/SwipeDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Components/SwipeDeckView.swift; sourceTree = "<group>"; };
+		F10000000000000000000015 /* Discovrd/Sources/Views/Components/EmptyDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Components/EmptyDeckView.swift; sourceTree = "<group>"; };
+		F10000000000000000000016 /* Discovrd/Sources/Views/Components/ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Components/ErrorView.swift; sourceTree = "<group>"; };
+		F10000000000000000000017 /* Discovrd/Sources/Views/Discover/DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Discover/DiscoverViewModel.swift; sourceTree = "<group>"; };
+		F10000000000000000000018 /* Discovrd/Sources/Views/Discover/DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Discover/DiscoverView.swift; sourceTree = "<group>"; };
+		F10000000000000000000019 /* Discovrd/Sources/Views/MyArtists/MyArtistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/MyArtists/MyArtistsViewModel.swift; sourceTree = "<group>"; };
+		F1000000000000000000001A /* Discovrd/Sources/Views/MyArtists/MyArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/MyArtists/MyArtistsView.swift; sourceTree = "<group>"; };
+		F1000000000000000000001B /* Discovrd/Sources/Views/Settings/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Settings/SettingsView.swift; sourceTree = "<group>"; };
+		F1000000000000000000001C /* Discovrd/Sources/Views/Onboarding/OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Onboarding/OnboardingView.swift; sourceTree = "<group>"; };
+		F1000000000000000000001D /* Discovrd/Sources/Views/Onboarding/AuthorizationPromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/Onboarding/AuthorizationPromptView.swift; sourceTree = "<group>"; };
+		F1000000000000000000001E /* Discovrd/Sources/Views/MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/MainTabView.swift; sourceTree = "<group>"; };
+		F1000000000000000000001F /* Discovrd/Sources/Views/DiscovrdPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovrd/Sources/Views/DiscovrdPreviews.swift; sourceTree = "<group>"; };
+		R100000000000000000001 /* Discovrd/Resources/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discovrd/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		R100000000000000000002 /* Discovrd/Resources/PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Discovrd/Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		R100000000000000000003 /* Discovrd/Resources/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Discovrd/Resources/Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000003 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000010,
+				000000000000000000000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000008 /* Discovrd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000010 = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000001 /* Discovrd/Sources/App/DiscovrdApp.swift */,
+				F10000000000000000000002 /* Discovrd/Sources/Models/TrackItem.swift */,
+				F10000000000000000000003 /* Discovrd/Sources/Models/SwipeRecord.swift */,
+				F10000000000000000000004 /* Discovrd/Sources/Models/CachedTasteProfile.swift */,
+				F10000000000000000000005 /* Discovrd/Sources/Models/TasteProfile.swift */,
+				F10000000000000000000006 /* Discovrd/Sources/Models/DeckAlgorithm.swift */,
+				F10000000000000000000007 /* Discovrd/Sources/Models/AppSettings.swift */,
+				F10000000000000000000008 /* Discovrd/Sources/Services/ServiceProtocols.swift */,
+				F10000000000000000000009 /* Discovrd/Sources/Services/SwiftDataSwipeStore.swift */,
+				F1000000000000000000000A /* Discovrd/Sources/Services/TasteProfileService.swift */,
+				F1000000000000000000000B /* Discovrd/Sources/Services/MusicAPINetworkClient.swift */,
+				F1000000000000000000000C /* Discovrd/Sources/Services/AppleMusicService.swift */,
+				F1000000000000000000000D /* Discovrd/Sources/Services/MockMusicService.swift */,
+				F1000000000000000000000E /* Discovrd/Sources/Services/MockSwipeStore.swift */,
+				F1000000000000000000000F /* Discovrd/Sources/Services/AudioPreviewPlayer.swift */,
+				F10000000000000000000010 /* Discovrd/Sources/Views/Components/AmbientArtworkBackground.swift */,
+				F10000000000000000000011 /* Discovrd/Sources/Views/Components/TrackCardView.swift */,
+				F10000000000000000000012 /* Discovrd/Sources/Views/Components/ActionButtonsBar.swift */,
+				F10000000000000000000013 /* Discovrd/Sources/Views/Components/SwipeStampView.swift */,
+				F10000000000000000000014 /* Discovrd/Sources/Views/Components/SwipeDeckView.swift */,
+				F10000000000000000000015 /* Discovrd/Sources/Views/Components/EmptyDeckView.swift */,
+				F10000000000000000000016 /* Discovrd/Sources/Views/Components/ErrorView.swift */,
+				F10000000000000000000017 /* Discovrd/Sources/Views/Discover/DiscoverViewModel.swift */,
+				F10000000000000000000018 /* Discovrd/Sources/Views/Discover/DiscoverView.swift */,
+				F10000000000000000000019 /* Discovrd/Sources/Views/MyArtists/MyArtistsViewModel.swift */,
+				F1000000000000000000001A /* Discovrd/Sources/Views/MyArtists/MyArtistsView.swift */,
+				F1000000000000000000001B /* Discovrd/Sources/Views/Settings/SettingsView.swift */,
+				F1000000000000000000001C /* Discovrd/Sources/Views/Onboarding/OnboardingView.swift */,
+				F1000000000000000000001D /* Discovrd/Sources/Views/Onboarding/AuthorizationPromptView.swift */,
+				F1000000000000000000001E /* Discovrd/Sources/Views/MainTabView.swift */,
+				F1000000000000000000001F /* Discovrd/Sources/Views/DiscovrdPreviews.swift */,
+				R100000000000000000001 /* Discovrd/Resources/Assets.xcassets */,
+				R100000000000000000002 /* Discovrd/Resources/PrivacyInfo.xcprivacy */,
+				R100000000000000000003 /* Discovrd/Resources/Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000002 /* Discovrd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000000C /* Build configuration list for PBXNativeTarget "Discovrd" */;
+			buildPhases = (
+				000000000000000000000004 /* Sources */,
+				000000000000000000000005 /* Frameworks */,
+				000000000000000000000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Discovrd;
+			productName = Discovrd;
+			productReference = 000000000000000000000008 /* Discovrd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2720;
+				TargetAttributes = {
+					000000000000000000000002 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000000009 /* Build configuration list for PBXProject "Discovrd" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				fr,
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000003;
+			productRefGroup = 000000000000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000002 /* Discovrd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B100000000000000000001 /* Discovrd/Resources/Assets.xcassets in Resources */,
+				B100000000000000000002 /* Discovrd/Resources/PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* Discovrd/Sources/App/DiscovrdApp.swift in Sources */,
+				A10000000000000000000002 /* Discovrd/Sources/Models/TrackItem.swift in Sources */,
+				A10000000000000000000003 /* Discovrd/Sources/Models/SwipeRecord.swift in Sources */,
+				A10000000000000000000004 /* Discovrd/Sources/Models/CachedTasteProfile.swift in Sources */,
+				A10000000000000000000005 /* Discovrd/Sources/Models/TasteProfile.swift in Sources */,
+				A10000000000000000000006 /* Discovrd/Sources/Models/DeckAlgorithm.swift in Sources */,
+				A10000000000000000000007 /* Discovrd/Sources/Models/AppSettings.swift in Sources */,
+				A10000000000000000000008 /* Discovrd/Sources/Services/ServiceProtocols.swift in Sources */,
+				A10000000000000000000009 /* Discovrd/Sources/Services/SwiftDataSwipeStore.swift in Sources */,
+				A1000000000000000000000A /* Discovrd/Sources/Services/TasteProfileService.swift in Sources */,
+				A1000000000000000000000B /* Discovrd/Sources/Services/MusicAPINetworkClient.swift in Sources */,
+				A1000000000000000000000C /* Discovrd/Sources/Services/AppleMusicService.swift in Sources */,
+				A1000000000000000000000D /* Discovrd/Sources/Services/MockMusicService.swift in Sources */,
+				A1000000000000000000000E /* Discovrd/Sources/Services/MockSwipeStore.swift in Sources */,
+				A1000000000000000000000F /* Discovrd/Sources/Services/AudioPreviewPlayer.swift in Sources */,
+				A10000000000000000000010 /* Discovrd/Sources/Views/Components/AmbientArtworkBackground.swift in Sources */,
+				A10000000000000000000011 /* Discovrd/Sources/Views/Components/TrackCardView.swift in Sources */,
+				A10000000000000000000012 /* Discovrd/Sources/Views/Components/ActionButtonsBar.swift in Sources */,
+				A10000000000000000000013 /* Discovrd/Sources/Views/Components/SwipeStampView.swift in Sources */,
+				A10000000000000000000014 /* Discovrd/Sources/Views/Components/SwipeDeckView.swift in Sources */,
+				A10000000000000000000015 /* Discovrd/Sources/Views/Components/EmptyDeckView.swift in Sources */,
+				A10000000000000000000016 /* Discovrd/Sources/Views/Components/ErrorView.swift in Sources */,
+				A10000000000000000000017 /* Discovrd/Sources/Views/Discover/DiscoverViewModel.swift in Sources */,
+				A10000000000000000000018 /* Discovrd/Sources/Views/Discover/DiscoverView.swift in Sources */,
+				A10000000000000000000019 /* Discovrd/Sources/Views/MyArtists/MyArtistsViewModel.swift in Sources */,
+				A1000000000000000000001A /* Discovrd/Sources/Views/MyArtists/MyArtistsView.swift in Sources */,
+				A1000000000000000000001B /* Discovrd/Sources/Views/Settings/SettingsView.swift in Sources */,
+				A1000000000000000000001C /* Discovrd/Sources/Views/Onboarding/OnboardingView.swift in Sources */,
+				A1000000000000000000001D /* Discovrd/Sources/Views/Onboarding/AuthorizationPromptView.swift in Sources */,
+				A1000000000000000000001E /* Discovrd/Sources/Views/MainTabView.swift in Sources */,
+				A1000000000000000000001F /* Discovrd/Sources/Views/DiscovrdPreviews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00000000000000000000000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_PREVIEWS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		00000000000000000000000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00000000000000000000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RLG5WX62KW;
+				ENABLE_PREVIEWS = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Discovrd/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Discovrd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00000000000000000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RLG5WX62KW;
+				ENABLE_PREVIEWS = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Discovrd/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Discovrd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000009 /* Build configuration list for PBXProject "Discovrd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000A /* Debug */,
+				00000000000000000000000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000000C /* Build configuration list for PBXNativeTarget "Discovrd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000D /* Debug */,
+				00000000000000000000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

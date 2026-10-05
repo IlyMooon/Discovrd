@@ -1,0 +1,77 @@
+# Directives de Développement & Design System - Discovrd (iOS / SwiftUI)
+
+Ce document définit les règles de développement, l'architecture et les standards d'interface utilisateur pour le projet iOS.
+
+---
+
+## 1. Architecture & Frameworks Cibles
+
+- **Framework principal** : SwiftUI moderne (iOS 17+ / iOS 18+).
+- **Concurrence & Données** : Swift Concurrency (`async`/`await`, `Task`, `@MainActor`), `Observation` (`@Observable`).
+- **Support Thèmes** : Gestion native et adaptative du Dark Mode et Light Mode via les couleurs sémantiques système (`Color(uiColor: .systemBackground)`, `Color.primary`, `Color.secondary`) et assets de couleurs adaptés.
+- **Animations** :
+  - Fluidité prioritaire avec les animations à ressort : `withAnimation(.spring(response:dampingFraction:blendDuration:))` ou `.animation(.spring(...), value: ...)`.
+  - Transitions interactives et micro-interactions soignées.
+
+---
+
+## 2. Design System : Style Liquid Glass
+
+Le style visuel repose sur une esthétique verrière contemporaine, lumineuse et fluide ("Liquid Glass").
+
+### Matériaux & Flous d'Arrière-Plan
+- Utiliser systématiquement les matériaux natifs de SwiftUI pour les arrière-plans de cartes, barres d'outils, fiches et modales :
+  - `.ultraThinMaterial` pour les surfaces très légères et immersives.
+  - `.thinMaterial` ou `.regularMaterial` pour les composants nécessitant une hiérarchie ou un contraste plus élevé.
+- Privilégier les fonds avec flous d'arrière-plan dynamiques et superposition de couches transparentes/translucides.
+
+### Effets de Réfraction & Dégradés de Surface
+- Superposer des dégradés linéaires subtils pour simuler la lumière incidente et la courbure du verre :
+  ```swift
+  LinearGradient(
+      colors: [
+          Color.white.opacity(0.18),
+          Color.white.opacity(0.04)
+      ],
+      startPoint: .topLeading,
+      endPoint: .bottomTrailing
+  )
+  ```
+- En Dark Mode, adapter les opacités pour conserver l'effet de brillance sans éblouissement.
+
+### Bordures Subtiles (Liquid Stroke)
+- Délimiter les surfaces en verre à l'aide de bordures intérieures délicates via `strokeBorder` :
+  ```swift
+  .overlay(
+      RoundedRectangle(cornerRadius: 24, style: .continuous)
+          .strokeBorder(
+              LinearGradient(
+                  colors: [
+                      Color.white.opacity(0.4),
+                      Color.white.opacity(0.1),
+                      Color.clear
+                  ],
+                  startPoint: .topLeading,
+                  endPoint: .bottomTrailing
+              ),
+              lineWidth: 1
+          )
+  )
+  ```
+
+### Ombres Portées Diffuses
+- Éviter les ombres noires dures. Utiliser des ombres portées diffuses et douces avec un rayon généreux :
+  ```swift
+  .shadow(color: Color.black.opacity(0.08), radius: 20, x: 0, y: 10)
+  .shadow(color: Color.black.opacity(0.04), radius: 6, x: 0, y: 2)
+  ```
+
+---
+
+## 3. Bonnes Pratiques de Code SwiftUI
+
+- **Hiérarchie et Lisibilité** : Découper les vues volumineuses en sous-composants réutilisables ou computed properties privées (`@ViewBuilder private var headerView: some View`).
+- **Accessibilité** :
+  - Support de Dynamic Type (`@ScaledMetric`, styles de police `.headline`, `.body`, etc.).
+  - Labels et traits d'accessibilité explicites (`.accessibilityLabel(...)`).
+- **Composabilité** : Créer des `ViewModifier` réutilisables pour le style Liquid Glass (ex: `LiquidGlassModifier`, `.liquidGlassCard()`).

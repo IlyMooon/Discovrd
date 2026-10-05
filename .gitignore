@@ -1,0 +1,82 @@
+# ==============================================================================
+# Discovrd - .gitignore (iOS / Swift / Xcode)
+# ==============================================================================
+
+# --- macOS System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# --- Xcode & Build Artifacts ---
+build/
+DerivedData/
+*.moved-builder
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcresult
+
+# --- Xcode User-Specific Settings ---
+# Ne JAMAIS commiter les préférences utilisateur, états de fenêtres et breakpoints
+xcuserdata/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcuserstate
+*.xcscmblueprint
+*.xcprivatedata
+
+# --- Swift Package Manager ---
+.build/
+Packages/
+.swiftpm/xcode/xcuserdata/
+.swiftpm/configuration/
+
+# --- Compiled Binaries & Test Artifacts ---
+main
+*.o
+*.obj
+*.dylib
+*.a
+*.out
+a.out
+*.bin
+
+# --- Fastlane & CI ---
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+!fastlane/screenshots/default.png
+fastlane/test_output
+
+# --- Secrets, Profiles & Provisioning ---
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.cer
+*.key
+AuthKey_*.p8
+.env
+.env.*
+!.env.example
+secrets.json
+
+# --- Editors & IDEs ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Local Agent & Environment Configurations ---
+# Fichiers de configuration contenant des chemins absolus machine locale
+mcp_settings.json
