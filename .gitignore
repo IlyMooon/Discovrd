@@ -1,16 +1,18 @@
 # ==============================================================================
-# Discovrd - .gitignore (iOS / Swift / Xcode)
+# Discovrd - .gitignore (iOS / Swift / Xcode / Python)
 # ==============================================================================
 
-# --- macOS System Files ---
+# OS & System Files
 .DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
 Icon?
+Thumbs.db
+ehthumbs.db
 
-# --- Xcode & Build Artifacts ---
+# Xcode & Build Artifacts
 build/
 DerivedData/
 *.moved-builder
@@ -19,9 +21,9 @@ DerivedData/
 *.dSYM.zip
 *.dSYM
 *.xcresult
+*.xcarchive
 
-# --- Xcode User-Specific Settings ---
-# Ne JAMAIS commiter les préférences utilisateur, états de fenêtres et breakpoints
+# Xcode User-Specific Settings
 xcuserdata/
 *.pbxuser
 !default.pbxuser
@@ -34,14 +36,20 @@ xcuserdata/
 *.xcuserstate
 *.xcscmblueprint
 *.xcprivatedata
+*.xcbkptlist
 
-# --- Swift Package Manager ---
+# Swift Package Manager & Dependencies
 .build/
 Packages/
 .swiftpm/xcode/xcuserdata/
 .swiftpm/configuration/
 
-# --- Compiled Binaries & Test Artifacts ---
+# Python Cache & Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Compiled Binaries & Test Artifacts
 main
 *.o
 *.obj
@@ -51,14 +59,18 @@ main
 a.out
 *.bin
 
-# --- Fastlane & CI ---
+# Logs & Temporary Files
+*.log
+tmp/
+
+# Fastlane & CI
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 !fastlane/screenshots/default.png
 fastlane/test_output
 
-# --- Secrets, Profiles & Provisioning ---
+# Secrets, Provisioning & Local Config
 *.mobileprovision
 *.provisionprofile
 *.p12
@@ -70,13 +82,12 @@ AuthKey_*.p8
 !.env.example
 secrets.json
 
-# --- Editors & IDEs ---
+# Editors & IDEs
 .idea/
 .vscode/
 *.swp
 *.swo
 *~
 
-# --- Local Agent & Environment Configurations ---
-# Fichiers de configuration contenant des chemins absolus machine locale
+# Local Tooling & Agent Configurations
 mcp_settings.json
